@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template
 
-from regression import Model
+from app.regression import Model
 
 app = Flask(__name__)
 
