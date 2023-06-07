@@ -5,7 +5,7 @@ An AI and ML-based model that predicts food prices in the Philippines from obser
 The documentation for the model, including the types of regression tested, the parameters tuned, and the training and testing results can be found in the notebook `CS-180-Final-Project.ipynb` in the root folder.
 
 ## Dataset
-The dataset used in training and testing was retrived from the Humanitarian Data Exchange. This dataset is publicly available and can be accessed through this [link](https://data.humdata.org/dataset/wfp-food-prices-for-philippines).
+The dataset used in training and testing was retrived from the Humanitarian Data Exchange. The .csv file for the dataset can be found as `wfp_food_prices_phl.csv` in the root folder. This dataset is also publicly available and can be accessed through this [link](https://data.humdata.org/dataset/wfp-food-prices-for-philippines).
 
 ## Web App
 The predictive model was incorporated into a web application to allow end users to use it as an assistive tool in budgeting and financial decisions.
