@@ -34,4 +34,3 @@ To run the program in debug mode, execute the following command:
 ``` bash
 python -m app.app
 ```
-### API Endpoints
