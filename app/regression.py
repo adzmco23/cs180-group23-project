@@ -61,15 +61,21 @@ class Model:
     
     def getPrice(self, params):
         d = pd.DataFrame(data=None, columns=self.data.drop(['price'], axis='columns').columns)
+        '''
+        only a subset of possible inputs were implemented for the demonstration
 
-        # commodities considered: rice (regular), rice (special), eggs, mango, banana, chicken
-        # sample: params = {'year':2023, 'month':5, 'latitude':14.604167, 'longitude':120.982222, 'inflation':6.6, 'mango':1, 'Retail':1}
+        commodities considered: rice (regular), rice (special), eggs, mango, chicken
+        locations considered (latlong mappings): region 1 (Ilocos Norte), Metro Manila, region 6 (Iloilo), region 8 (southern leyte), region 10 (Lanao del Norte)
+        priceflag: actual only
+        pricetype: retail or wholesale
+
+        '''
         
         d = d.append({'year':params['year'],'month':params['month'], 'latitude':params['latitude'],
                       'longitude':params['longitude'], 'inflation':params['inflation'],
                       'commodity_Mangoes (carabao)':params.setdefault('mango',0), 'commodity_Rice (regular, milled)':params.setdefault('rice (regular)',0),
                       'commodity_Rice (special)':params.setdefault('rice (special)',0), 'commodity_Eggs':params.setdefault('eggs',0),
-                      'commodity_Bananas (lakatan)':params.setdefault('banana',0),'commodity_Meat (chicken, whole)':params.setdefault('chicken',0),
+                      'commodity_Meat (chicken, whole)':params.setdefault('chicken',0),
                       'priceflag_actual':1, 'pricetype_Retail':params.setdefault('retail',0),
                       'pricetype_Wholesale':params.setdefault('wholesale',0)}, ignore_index=True)
         
