@@ -1,0 +1,105 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(45deg, #4b6cb7 0%, #182848 100%);
+	min-height: 100vh;
+}
+
+.inputRow {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem;
+}
+
+#ProjectTitle {
+	color: white;
+	margin-bottom: 40px;
+	font-size: 3.25rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+#pricereveal {
+	font-size: 3rem;
+	font-weight: medium;
+	text-align: center;
+}
+
+#pricebox {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #1d1c1c;
+	margin: 1rem;
+	padding: 2rem;
+	border-radius: 1rem;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+input {
+	font-size: 16px;
+	color: #000;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 999px;
+	padding: 10px;
+	margin-left: 10px;
+	margin-right: 20px;
+	box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+select {
+	font-size: 16px;
+	color: #000;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 999px;
+	padding: 10px;
+	margin-left: 10px;
+	margin-right: 20px;
+	box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+.button-34 {
+	background: #5e5df0;
+	border-radius: 999px;
+	box-shadow: #5e5df0 0 10px 20px -10px;
+	box-sizing: border-box;
+	color: #ffffff;
+	cursor: pointer;
+	font-family: Inter, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	opacity: 1;
+	outline: 0 solid transparent;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	width: fit-content;
+	word-break: break-word;
+	padding: 10px 20px;
+	border: 1px solid #ccc;
+	transition: background-color 0.3s;
+}
+
+.button-34:active {
+	background-color: #ddd;
+	transform: translateY(1px);
+}
+
+#group {
+	color: rgb(199, 199, 199);
+	position: absolute;
+	bottom: 10px;
+}
+
+* {
+	font-family: "Azeret Mono", monospace;
+	margin: 0;
+}
