@@ -13,31 +13,20 @@
 			rel="stylesheet"
 			type="text/css"
 			href="{{ url_for('static',filename='style.css') }}" />
+		<script defer src="{{ url_for('static', filename='script.js') }}"></script>
 	</head>
 	<body>
 		<div class="container">
 			<h1 id="ProjectTitle">
 				Predicting Food Prices in the Philippines using Regression
 			</h1>
-			<form>
+			<form id="arguments" class="hidden">
 				<div class="inputRow">
 					<label for="Year">Year:</label>
-					<input
-						type="number"
-						min="1950"
-						max="3000"
-						value="2023"
-						id="year"
-						name="year" />
+					<input type="number" min="1950" max="3000" id="year" name="year" />
 
 					<label for="Month">Month:</label>
-					<input
-						type="number"
-						min="1"
-						max="12"
-						value="6"
-						id="month"
-						name="month" />
+					<input type="number" min="1" max="12" id="month" name="month" />
 
 					<label for="Inflation">Inflation:</label>
 					<input
@@ -45,7 +34,6 @@
 						step="0.01"
 						min="0"
 						max="1000"
-						value="69.69"
 						id="inflation"
 						name="inflation" />
 				</div>
@@ -54,15 +42,15 @@
 					<label for="Commodity">Commodity:</label>
 					<select id="commodity" name="commodity">
 						<option value="rice (regular)">Rice (regular)</option>
-						<option value="rice (special)">Rice (regular)</option>
-						<option value="eggs" selected>Eggs</option>
+						<option value="rice (special)">Rice (special)</option>
+						<option value="eggs">Eggs</option>
 						<option value="mango">Mango</option>
 						<option value="chicken">Chicken</option>
 					</select>
 
 					<label for="Pricetype">Pricetype:</label>
 					<select id="pricetype" name="pricetype">
-						<option value="retail" selected>Retail</option>
+						<option value="retail">Retail</option>
 						<option value="wholesale">Wholesale</option>
 					</select>
 
@@ -71,7 +59,7 @@
 						<option value="Region 1 (Ilocos Norte)">
 							Region 1 (Ilocos Norte)
 						</option>
-						<option value="Metro Manila" selected>Metro Manila</option>
+						<option value="Metro Manila">Metro Manila</option>
 						<option value="region 6 (Iloilo)">Region 6 (Iloilo)</option>
 						<option value="region 8 (southern leyte)">
 							Region 8 (Southern Leyte)
