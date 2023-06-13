@@ -1,4 +1,4 @@
-# cs180-group23-project 
+# CS180 Group 23 Project: Predicting Food Prices in the Philippines using Regression
 An AI and ML-based model that predicts food prices in the Philippines from observed trends in historical data on food prices and the contributing factors using regression analysis
 
 ## Jupyter Notebook
